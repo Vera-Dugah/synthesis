@@ -78,6 +78,14 @@ nav a[aria-current="page"] {
   color: #f3efe6;
 }
 
+nav a:hover {
+  color: #f3efe6;
+}
+
+main a:hover {
+  color: #ffb088;
+}
+
 main {
   flex: 1;
   align-self: center;
@@ -162,6 +170,35 @@ tbody tr:last-child td {
   border-bottom: 0;
 }
 
+tbody tr:hover th,
+tbody tr:hover td {
+  background: #2a2a2a;
+}
+
+td form {
+  margin: 0;
+}
+
+td button {
+  margin-top: 0;
+  padding: 0.4rem 0.75rem;
+}
+
+dialog .dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+dialog .dialog-actions form {
+  margin: 0;
+}
+
+dialog .dialog-actions button {
+  margin-top: 0;
+}
+
 footer {
   padding: 1.25rem 1.75rem 2rem;
   border-top: 1px solid #2c2c2c;
@@ -222,6 +259,11 @@ button {
   background: #ff5c1c;
   border-color: #ff5c1c;
   cursor: pointer;
+}
+
+button:hover {
+  background: #ff8a4d;
+  border-color: #ff8a4d;
 }
 
 h2 {
