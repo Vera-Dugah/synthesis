@@ -167,6 +167,108 @@ footer {
   border-top: 1px solid #2c2c2c;
 }
 
+fieldset {
+  margin: 2rem 0 0;
+  padding: 1.25rem 1.25rem 1.5rem;
+  border: 1px solid #2c2c2c;
+  border-radius: 12px;
+}
+
+legend,
+label,
+h2,
+#fee {
+  color: #f3efe6;
+}
+
+legend {
+  padding: 0 0.35rem;
+  font-weight: 600;
+}
+
+label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  border: 1px solid #2c2c2c;
+  border-radius: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.7rem 0.85rem;
+  color: #f3efe6;
+  background: #1e1e1e;
+}
+
+.req {
+  color: #ff5c1c;
+  font-size: 0.9rem;
+}
+
+button {
+  margin-top: 0.25rem;
+  padding: 0.7rem 1.1rem;
+  color: #161616;
+  background: #ff5c1c;
+  border-color: #ff5c1c;
+  cursor: pointer;
+}
+
+h2 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+#fee {
+  font-size: 1.35rem;
+}
+
+#warning:not([hidden]) {
+  margin: 0 0 1rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #ff5c1c;
+  border-radius: 8px;
+  color: #f3efe6;
+  background: #2a1812;
+}
+
+input:user-invalid,
+select:user-invalid {
+  border-color: #ff5c1c;
+}
+
+dialog {
+  max-width: 26rem;
+  padding: 1.5rem;
+  color: #f3efe6;
+  background: #1e1e1e;
+  border: 1px solid #2c2c2c;
+  border-radius: 12px;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+dialog h2 {
+  margin-top: 0;
+}
+
+dialog p {
+  color: #b7b1a8;
+}
+
 @media (max-width: 56rem) {
   nav {
     flex-basis: 100%;

@@ -6,6 +6,7 @@
   <title>Late slip — The Saturday Shelf</title>
   <meta name="description" content="A book from The Saturday Shelf that comes back late costs 2 cedis for each day.">
   <link rel="stylesheet" href="css/shelf.css">
+  <script src="js/slip.js" defer></script>
 </head>
 <body>
   <header>
@@ -26,6 +27,17 @@
     <p>A book is due on the Saturday after you borrow it.</p>
     <p>If you bring it back after that day, the fee is <strong>2 cedis for each day</strong> it is late.</p>
     <p>A book that is three days late costs <em>6 cedis</em>.</p>
+
+    <h2>A few examples</h2>
+    <ul id="examples"></ul>
+
+    <form id="fee-form">
+      <p>
+        <label for="days">How many days late is your book?</label>
+        <input id="days" name="days" type="number" min="0" step="1" value="0" required>
+      </p>
+      <p id="fee"></p>
+    </form>
   </main>
 
   <footer>
