@@ -38,13 +38,7 @@ form.addEventListener("input", function () {
   if (allValid) warning.hidden = true;
 });
 
-const params = new URLSearchParams(window.location.search);
-const name = params.get("name");
-const email = params.get("email");
-const book = params.get("book");
-
-if (name && email && email.includes("@") && book) {
-  const message = document.getElementById("received-text");
-  message.textContent = name + ", your request for " + book + " was received. A note can be sent to " + email + ".";
+const message = document.getElementById("received-text");
+if (message.textContent.trim() !== "") {
   document.getElementById("received").showModal();
 }
